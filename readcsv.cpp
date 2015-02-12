@@ -32,8 +32,8 @@ void get_data(char *fname, vector< vector<float> > &values, char delim)
     values.push_back(vector<float> (n+1,0.0));
     int m = 0;
     string field;
-    istringstream s(line);
-    while(getline(s,field,delim))
+    istringstream sline(line);
+    while(getline(sline,field,delim))
     {
         values.back().at(m) = atof(field.c_str());
         m++;
@@ -42,17 +42,17 @@ void get_data(char *fname, vector< vector<float> > &values, char delim)
     // Loop over the rest of the rows in the file and read in
     while (getline(data, line)){
         values.push_back(vector<float> (n+1,0.0));
-        istringstream s(line);
+        istringstream sline(line);
         string field;
         m = 0;
-        while (getline(s,field,delim)){
+        while (getline(sline,field,delim)){
             values.back().at(m) = atof(field.c_str());
             m++;
         }
     }
 
     // Close data file and end
-    data.close(); 
+    data.close();
     return;
 }
 
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 {
     //
     // Example implentation:
-    // 
+    //
     // This code will compile using
     // $ g++ readcsv.cpp -o readcsv
     //
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
     char *FNAME;
     FNAME = argv[1];
-    
+
     // Create an empty 2dim vector
     vector< vector<float> > DATA;
 
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 
     // Function call
     get_data(FNAME, DATA, DELIM);
-    
+
     // Print data file to screen
     // Note: hard coded for Mx3 vector
     for (int row=0; row < DATA.size(); row++)
