@@ -1,8 +1,9 @@
 #include <fstream>      /* ifstream         */
 #include <iostream>     /* cout             */
-#include <cstdlib>      /* count            */
+#include <cstdlib>      /* atof             */
 #include <sstream>      /* istringstream    */
 #include <vector>       /* vectors          */
+#include <algorithm>    /* count            */
 
 using namespace std;
 
