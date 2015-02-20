@@ -1,4 +1,4 @@
-#CSV4CPP [![Build Status](https://travis-ci.org/astronomerdamo/csv4cpp.svg?branch=master)](https://travis-ci.org/astronomerdamo/csv4cpp)
+#csv4cpp [![Build Status](https://travis-ci.org/astronomerdamo/csv4cpp.svg?branch=master)](https://travis-ci.org/astronomerdamo/csv4cpp)
 
 C++ CSV Data File Parser
 
