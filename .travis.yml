@@ -1,0 +1,6 @@
+language: cpp
+compiler:
+  - gcc
+script:
+  - g++ readcsv.cpp -o readcsv
+  - ./readcsv data.csv
