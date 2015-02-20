@@ -1,8 +1,10 @@
-#C++ CSV Data File Parser
+#CSV4CPP [![Build Status](https://travis-ci.org/astronomerdamo/csv4cpp.svg?branch=master)](https://travis-ci.org/astronomerdamo/csv4cpp)
+
+C++ CSV Data File Parser
 
 ##Requirements
 
-* C++ compiler, ie: gcc/g++
+* C++ compiler [Note: only tested with gcc - see .travis.yml]
 
 ##Introduction
 
