@@ -3,4 +3,5 @@ compiler:
   - gcc
 script:
   - g++ readcsv.cpp -o readcsv
-  - ./readcsv data.csv
+notifications:
+  email: false
