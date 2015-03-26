@@ -12,9 +12,9 @@ I wrote this function after becoming frustrated with the level of difficulty req
 
 ##Installation
 
-`
-$ git clone https://github.com/astronomerdamo/csv4cpp.git
-`
+```
+git clone https://github.com/astronomerdamo/csv4cpp.git
+```
 
 ##Usage
 
@@ -22,15 +22,15 @@ Feel free to copy only the csv parser function, or compile and test at will. If 
 
 To compile,
 
-`
-$ g++ readcsv.cpp -o readcsv
-`
+```
+g++ readcsv.cpp -o readcsv
+```
 
 To run using the provided data file example,
 
-`
-$ ./readcsv data.csv
-`
+```
+./readcsv data.csv
+```
 
 with output,
 
@@ -42,9 +42,9 @@ with output,
 
 Or more generically,
 
-`
-$ ./readcsv path_to/data.csv
-`
+```
+./readcsv path_to/data.csv
+```
 
 __Note:__
 * CSV parser is not built to support comments in data file (it's on my ToDo).
